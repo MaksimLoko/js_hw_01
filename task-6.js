@@ -24,6 +24,8 @@ raised_hands
 Лучшее решение с циклом for
 */
 
+//ЦИКЛ FOR
+/*
 let input = prompt("Enter Number");
 let total = 0;
 
@@ -34,6 +36,25 @@ for (let i = 0; input !== null; i += 1) {
   } else {
     total += Number(input);
     input = prompt("Enter Number");
+  }
+}
+
+alert(`Общая сумма равна', ${total}`);
+*/
+//ЦИКЛ WHILE
+
+let input = prompt("Enter Number");
+let total = 0;
+
+let i = 0;
+while (input !== null) {
+  if (isNaN(input)) {
+    alert("Введено не число");
+    input = prompt("Enter Number");
+  } else {
+    total += Number(input);
+    input = prompt("Enter Number");
+    i += 1;
   }
 }
 
